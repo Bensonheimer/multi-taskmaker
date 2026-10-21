@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11142b">
+  <meta name="description" content="Multi TaskMaker – persönliche Schnelltools, Gaming-Profile, Timer und Abläufe.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <title>Multi TaskMaker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true">MT</div>
+      <div class="brand-copy">
+        <p class="eyebrow">DEINE STEUERZENTRALE</p>
+        <h1>Multi <span>TaskMaker</span></h1>
+      </div>
+      <button class="icon-button" id="open-settings" aria-label="Einstellungen öffnen" title="Einstellungen">⚙</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <p class="eyebrow">ALLES AN EINEM ORT</p>
+        <h2>Was möchtest du<br><span>heute erledigen?</span></h2>
+        <p class="hero-copy">Deine Tools, Spiele und Abläufe – übersichtlich gesammelt.</p>
+        <div class="hero-actions">
+          <button class="primary-button" data-view="tools">Tools öffnen <span>↗</span></button>
+          <button class="secondary-button" data-view="favorites">★ Favoriten</button>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <div><p class="eyebrow">DEIN WORKSPACE</p><h2>Bereiche</h2></div>
+        <span class="small-pill" id="mode-count">6 BEREICHE</span>
+      </section>
+
+      <section class="mode-grid" id="mode-grid">
+        <button class="mode-card" data-view="tools"><span class="mode-icon purple">⚡</span><span class="mode-title">Quick Tools</span><span class="mode-desc">Schnellzugriffe und Links</span><span class="card-arrow">↗</span></button>
+        <button class="mode-card" data-view="gaming"><span class="mode-icon blue">🎮</span><span class="mode-title">Gaming Tools</span><span class="mode-desc">Roblox und Minecraft</span><span class="card-arrow">↗</span></button>
+        <button class="mode-card" data-view="timers"><span class="mode-icon pink">◷</span><span class="mode-title">Multi Timer</span><span class="mode-desc">Mehrere Timer verwalten</span><span class="card-arrow">↗</span></button>
+        <button class="mode-card" data-view="automation"><span class="mode-icon teal">⤴</span><span class="mode-title">Automation Center</span><span class="mode-desc">Unterstützte Abläufe planen</span><span class="card-arrow">↗</span></button>
+        <button class="mode-card" data-view="appearance"><span class="mode-icon orange">✦</span><span class="mode-title">Design Studio</span><span class="mode-desc">Farben und Darstellung</span><span class="card-arrow">↗</span></button>
+        <button class="mode-card" data-view="favorites"><span class="mode-icon gold">★</span><span class="mode-title">Favoriten</span><span class="mode-desc">Deine wichtigsten Bereiche</span><span class="card-arrow">↗</span></button>
+      </section>
+
+      <section class="view-panel hidden" id="view-panel" aria-live="polite">
+        <div class="view-topline">
+          <button class="back-button" id="back-home">← Startseite</button>
+          <span class="small-pill" id="view-label">BEREICH</span>
+        </div>
+        <div id="view-content"></div>
+      </section>
+      <section class="footer-note">
+        <span class="status-dot"></span>
+        <span>Lokale Web-App · Deine Einstellungen bleiben auf diesem Gerät gespeichert</span>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Hauptnavigation">
+      <button class="nav-item active" data-view="home"><span>⌂</span>Start</button>
+      <button class="nav-item" data-view="tools"><span>⚡</span>Tools</button>
+      <button class="nav-item" data-view="gaming"><span>🎮</span>Gaming</button>
+      <button class="nav-item" data-view="favorites"><span>★</span>Favoriten</button>
+    </nav>
+    <div class="toast" id="toast" role="status"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "Multi TaskMaker",
+  "short_name": "TaskMaker",
+  "description": "Schnelltools, Gaming-Profile, Timer und Favoriten.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0d1c",
+  "theme_color": "#11142b",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
