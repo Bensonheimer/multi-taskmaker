@@ -1,0 +1,31 @@
+MULTI TASKMAKER – SOUNDBOARD EINBAU
+
+Dateien in diesem Paket:
+- soundboard.html
+- soundboard.css
+- soundboard.js
+- HOMEPAGE-BUTTON.txt
+
+WICHTIG:
+Dieses Paket ändert deine bestehende index.html und styles.css NICHT automatisch. Lade die drei soundboard-Dateien in den Hauptordner deines GitHub-Repositories hoch. Dadurch bleibt die bestehende App unangetastet.
+
+SCHRITT 1 – Soundboard-Dateien hochladen
+1. Öffne: https://github.com/Bensonheimer/multi-taskmaker/upload/main
+2. Lade soundboard.html, soundboard.css und soundboard.js hoch.
+3. Scrolle nach unten und tippe auf Commit changes.
+
+SCHRITT 2 – Button auf der Startseite ergänzen
+1. Öffne https://github.com/Bensonheimer/multi-taskmaker
+2. Tippe auf index.html und dann auf das Stift-Symbol (Edit).
+3. Suche den Bereich, in dem die vorhandenen Modus-/Feature-Karten stehen.
+4. Füge den HTML-Block aus HOMEPAGE-BUTTON.txt dort zwischen die vorhandenen Karten ein.
+5. Speichere mit Commit changes.
+
+SCHRITT 3 – testen
+Öffne:
+https://bensonheimer.github.io/multi-taskmaker/soundboard.html
+
+Wenn die Startseite aktualisiert ist, erscheint der neue Soundboard-Button dort ebenfalls.
+
+ZU DEN SOUNDS
+Alle zehn Buttons funktionieren sofort mit selbst erzeugten Web-Audio-Effekten. Das sind ähnliche, eigens erzeugte Platzhalter, nicht die Originalaufnahmen der genannten Memes oder Spiele. Originalaufnahmen nur verwenden, wenn du die nötigen Nutzungsrechte hast.

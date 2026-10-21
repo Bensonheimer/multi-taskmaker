@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050b18">
+  <title>Soundboard • Multi TaskMaker</title>
+  <link rel="stylesheet" href="soundboard.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="back-link" href="index.html" aria-label="Zurück zur Startseite">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6M9 12h12"/></svg>
+      </a>
+      <div class="brand"><span class="eyebrow">MULTI TASKMAKER</span><h1>Meme <span>Soundboard</span></h1></div>
+      <button id="stopAll" class="stop-button" type="button" title="Sound stoppen" aria-label="Sound stoppen">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+      </button>
+    </header>
+
+    <section class="intro panel">
+      <div class="intro-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13M9 18c0 1.1-1.6 2-3.5 2S2 19.1 2 18s1.6-2 3.5-2S9 16.9 9 18Zm12-2c0 1.1-1.6 2-3.5 2S14 17.1 14 16s1.6-2 3.5-2 4 0.9 4 2Z"/></svg></div>
+      <div><h2>Dein Meme-Mix</h2><p>Tippe auf einen Sound. Favoriten bleiben auf diesem Gerät gespeichert.</p></div>
+    </section>
+
+    <label class="search-wrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+      <input id="search" type="search" placeholder="Sound suchen…" autocomplete="off">
+    </label>
+
+    <nav class="filters" aria-label="Sound-Kategorien">
+      <button class="filter active" data-category="Alle">Alle</button>
+      <button class="filter" data-category="Memes">Memes</button>
+      <button class="filter" data-category="Gaming">Gaming</button>
+      <button class="filter" data-category="Action">Action</button>
+      <button class="filter" data-category="Tiere">Tiere</button>
+      <button class="filter" data-category="Favoriten">★ Favoriten</button>
+    </nav>
+
+    <section class="sound-grid" id="soundGrid" aria-label="Sounds"></section>
+    <p class="footnote">Hinweis: Diese Version enthält eigens erzeugte Soundeffekte als Platzhalter – nicht die Originalaufnahmen der genannten Memes oder Spiele. Für Originalsounds bitte nur Audiodateien verwenden, für die du die nötigen Nutzungsrechte hast.</p>
+  </main>
+  <script src="soundboard.js"></script>
+</body>
+</html>

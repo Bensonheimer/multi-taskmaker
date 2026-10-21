@@ -1,0 +1,15 @@
+<!-- Diesen Karten-Block in index.html zwischen die vorhandenen Modus-Karten einfügen. -->
+<a class="mode-card soundboard-home-card" href="soundboard.html">
+  <span class="mode-icon" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"></path>
+      <ellipse cx="5.5" cy="18" rx="3.5" ry="2"></ellipse>
+      <ellipse cx="17.5" cy="16" rx="3.5" ry="2"></ellipse>
+    </svg>
+  </span>
+  <span class="mode-title">Meme Soundboard</span>
+  <span class="mode-description">10 Sounds • Memes, Gaming, Action & Tiere</span>
+</a>
+
+<!-- Falls die Karten im bestehenden Design anders heißen, nutze den vorhandenen Kartenaufbau
+     als Vorlage und übernimm href="soundboard.html" sowie den Text. -->
